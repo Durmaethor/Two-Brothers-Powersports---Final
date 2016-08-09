@@ -1,0 +1,440 @@
+/*=====================================================
+		MAIN CSS
+=====================================================*/
+
+/*==========================
+		Base Styles
+==========================*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #fff;
+}	
+
+h1, h2, h3,
+.main-footer,
+.main-nav {
+		font-family: 'Frijole', cursive, Helvetica, Arial, sans-serif;
+}
+
+h1 {  
+	 font-size: 1.5rem; 
+	 color: rgba(0,0,0,1);
+	 text-transform: uppercase;
+	 font-weight: normal;
+	 line-height: 1.3;
+	 text-shadow: 0 1px 1px #bbb,
+				  0 2px 0 #999, 
+				  0 3px 0 #888, 
+				  0 4px 0 #777, 
+				  0 5px 0 #666, 
+				  0 6px 0 #555, 
+				  0 7px 0 #444, 
+				  0 8px 0 #333, 
+				  0 9px 7px #302314;
+	 margin: 15px 0;
+}
+
+h2 {  
+	 font-size: 1.25rem; 
+	 color: rgba(0,0,0,1);
+	 text-transform: uppercase;
+	 font-weight: normal;
+	 line-height: 1.3;
+	 text-shadow: 0 1px 1px #bbb,
+				  0 2px 0 #999, 
+				  0 3px 0 #888, 
+				  0 4px 0 #777, 
+				  0 5px 0 #666, 
+				  0 6px 0 #555, 
+				  0 7px 0 #444, 
+				  0 8px 0 #333, 
+				  0 9px 7px #302314;
+	 margin: 15px 0 50px;
+  }
+
+h3 {  
+	 font-size: 1rem; 
+	 color: rgba(0,0,0,1);
+	 text-transform: uppercase;
+	 font-weight: normal;
+	 line-height: 1.3;
+	 margin: 15px 0;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+img {
+	max-width: 75%;
+	height: auto;
+	border-radius: 8px;
+}
+
+
+/*==========================
+		Main Styles
+==========================*/
+
+.main-nav, 
+.main-header, 
+.faq-header {
+	text-align: center;
+}
+
+.main-header {
+	padding-top: 10px;
+	height: 300px;
+  
+	background: linear-gradient(0deg, #fff, transparent 15%),
+              #d6ff75 url('../Two Brothers V.3/images/RZR/IMG_1506.jpg') no-repeat center;
+  
+	background-size: cover;
+}
+
+.title {
+	border-bottom: 2px solid;
+	font-size: 1.5rem; 
+	font-family: 'Nova Square', cursive, sans-serif;
+	text-transform: uppercase;
+	color: black;
+}
+
+.main-nav {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	background: #d6ff75;
+	margin: 0;
+}
+
+.main-nav li {
+	list-style: none;
+	padding: 10px 5px;
+	flex-grow: 1;
+}
+
+.rates ul, 
+.contact-info {
+	padding: 0;
+}
+
+.rates li,
+.contact-info li {
+	list-style: none;
+	padding: 10px 5px;
+	font-family: 'Nova Square', cursive, sans-serif;
+}
+
+.d-logo {
+	width: 50px;
+	padding-top: 25px;
+}
+
+.logo {
+	display: none;
+}
+
+.FB-Logo {
+	width: 25px;
+}
+
+.container  {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.home-content, 
+.a-content {
+	padding: 15px 0;
+	text-align: center;
+	font-family: 'Nova Square', cursive, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.contact-content {
+	font-family: 'Nova Square', cursive, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.col {
+	padding: 10px 0;
+	text-align: left;
+	font-family: 'Nova Square', cursive, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.v-content {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.c-flex {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.photo-1  {
+	margin: 25px 0;
+}
+
+.main-footer,
+.d-logo {
+	text-align: center;
+	background: #fff;
+}
+
+.copyright {
+	padding: 15px 0;
+}
+
+.t-border {
+	 border-top: 2px solid #dfe2e6;
+	 margin-top: 10px;
+}
+
+/*==========================
+		Link styles
+==========================*/
+
+
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	color: #767575;
+}
+
+a:active {
+	color: #000;
+}
+
+
+/*=====================================================
+		MEDIA QUERIES
+=====================================================*/
+
+/*==========================
+		376px +
+==========================*/
+ 
+ @media (min-width: 376px) {
+	 
+.main-nav li {
+	padding: 15px 10px;
+  }
+  
+}
+
+/*==========================
+		425px +
+==========================*/
+
+@media (min-width: 425px){
+	
+.main-header {
+	padding-top: 115px;
+	height: 450px;
+  }
+  
+.faq-header {
+	padding-top: 104px;
+}
+	
+.main-nav {
+	position: fixed;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+
+.photo-1 {
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  }
+  
+}
+
+/*==========================
+		768px +
+==========================*/
+
+@media (min-width: 768px) {
+	
+.main-header {
+	padding-top: 75px;
+	height: 900px;
+  }
+  
+ h1 {
+	display: none;
+  }
+ 
+ h2 {
+	font-size: 3rem;
+  }
+  
+h3 {
+	font-size: 1.5rem;
+}
+
+.title {
+	font-size: 3rem; 
+  }
+	
+.main-nav {
+	position: fixed;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+  }
+  
+.container {
+	width: 80%;
+	max-width: 1600px;
+  }
+  
+  
+.v-content {
+	display: flex;
+	flex-direction: row;
+  }
+  
+.v-img {
+	flex-basis: 75%;
+}
+
+.c-flex {
+	flex-direction: row;
+	text-align: left;
+	justify-content: space-between;
+  }
+  
+.primary {
+	flex-basis: 40%;
+}
+
+.secondary {
+	flex-basis: 40%;
+}
+  
+.home-content, 
+.a-content {
+	font-size: 1.5rem;
+	line-height: 1.5;
+  }
+  
+.contact-content {
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+  
+.contact-info {
+	font-size: 1.25rem;
+	line-height: 1.5;
+}
+
+.col {
+	font-size: 1.5rem;
+	line-height: 1.5;
+  }
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 175px;
+	padding-top: 75px;
+  }
+ 
+}
+
+
+
+/*==========================
+		1050px +
+==========================*/
+@media (min-width: 1050px) {
+	
+.contact-content {
+	font-size: 1.5rem;
+  }
+  
+.contact-info {
+	font-size: 1.5rem;
+  }
+
+}
+
+
+/*==========================
+		1250px +
+==========================*/
+
+@media (min-width: 1250px) {
+	
+.main-header {
+	padding-top: 75px;
+	height: 1050px;
+  
+	background: linear-gradient(0deg, #fff, transparent 5%),
+              #d6ff75 url('../Two Brothers V.3/images/RZR/IMG_1506.jpg') no-repeat center;
+  
+	background-size: cover;
+  }
+
+.logo {
+	padding-top: 125px;
+	width: 250px;
+  }
+  
+}
+
+/*==========================
+		1650px +
+==========================*/
+
+@media (min-width: 1650px) {
+	
+ .main-header {
+	padding-top: 75px;	
+	height: 1250px;
+  
+	background: linear-gradient(0deg, #fff, transparent 5%),
+              #d6ff75 url('../Two Brothers V.3/images/RZR/IMG_1506.jpg') no-repeat center;
+  
+	background-size: cover;
+  }
+  
+.logo {
+	padding-top: 150px;
+	width: 300px;
+  }
+  
+}
+
+
+
+
+
+
+
